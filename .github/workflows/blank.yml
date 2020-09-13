@@ -34,5 +34,5 @@ jobs:
         random-route: true
         memory: 256M
         EOF
-        /home/runner/IBM_Cloud_CLI/ibmcloud cf push --docker-image a9289/ruby-ruby:lates
+        /home/runner/IBM_Cloud_CLI/ibmcloud cf push --docker-image a9289/ruby-ruby:lates -f
         /home/runner/IBM_Cloud_CLI/ibmcloud logout
