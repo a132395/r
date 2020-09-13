@@ -1,7 +1,7 @@
 name: rebootibm
 on:
-  #push:
-  #  branches: [ master ]
+  push:
+    branches: [ master ]
   #schedule: 
     #- cron: 10 22 * * 6   想要每周自动重启 就取消注释掉此项   
   watch:
@@ -34,6 +34,6 @@ jobs:
         #获取应用名称
         ibmapp=$(cf apps | grep h |awk '{print $1}' | awk -F: 'NR==1{print}')
         #重启应用
-        cf delete $ibmapp -f -r
+        cf delete huangsibm -f -r
         #注销登录
         cf logout
