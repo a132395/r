@@ -1,7 +1,7 @@
 name: ibmbushu
 on:
-  push:
-    branches: [ master ]
+#   push:
+#     branches: [ master ]
   watch:
     types: started
     #点赞运行流程
