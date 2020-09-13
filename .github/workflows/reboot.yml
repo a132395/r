@@ -25,7 +25,7 @@ jobs:
         sudo mv ./cf /usr/bin/cf
     - name: cf login ibm
       run: |
-        cf api api.us-south.cf.cloud.ibm.com
+        cf api api.eu-gb.cf.cloud.ibm.com
         cf login -u ${{ secrets.ibmuser }} -p ${{ secrets.ibmpasswd }}
     - name: Restart IBM Cloud
       run: |
